@@ -5,31 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="/dist/output.css" rel="stylesheet" />
+    <!-- <link href="/dist/output.css" rel="stylesheet" /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-gray-100">
-    <div class="px-8">
-      <img class="h-36" src="/images/logo.png" alt="SummerHoliday" />
-      <img
-        class="ml-7 h-64 rounded-lg shadow-xl"
-        src="/images/summer.jpg"
-        alt="Woman workationing on the beach "
-      />
-      <h1 class="mt-6 ml-8 text-2xl font-bold">
-        you can order now from anywhere.<br />
-        <span class="text-orange-600"> Take advantage of it. </span>
-      </h1>
-      <p class="ml-8 text-gray-600">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br />
-        Sunt, explicabo voluptas. Architecto quam magnam ut<br />
-        laboriosam incidunt harum, sequi expedita ullam, odit
-      </p>
-      <div class="mt-4">
-        <a
-          class="ml-9 rounded-lg inline-block bg-orange-600 px-4 py-2 text-white uppercase font-semibold text-sm"
-          href="#"
-          >Book your Escape</a
-        >
+  <body class="bg-gray-100 w-screen">
+    <div class="grid grid-cols-2">
+      <div class="px-8 max-w-md mx-auto sm:max-w-xl lg:py-12 lg:max-w-full">
+        <img class="h-36 lg:h-52" src="/images/logo.png" alt="SummerHoliday" />
+        <img
+          class="rounded-lg shadow-xl lg:hidden"
+          src="/images/summer.jpg"
+          alt="Vaction on the beach "
+        />
+        <h1 class="mt-6 text-xl sm:text-2xl font-bold lg:text-4xl">
+          you can order now from anywhere.<br />
+          <span class="text-orange-600"> Take advantage of it. </span>
+        </h1>
+        <p class="text-gray-600 sm:mt-4 sm:text-xl">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit Sunt,
+          explicabo voluptas. Architecto quam magnam ut laboriosam incidunt
+          harum, sequi expedita ullam, odit
+        </p>
+        <div class="mt-4 lg:mt-6 mx-auto">
+          <a
+            class="hover:bg-orange-400 hover:-translate-y-1 focus:hover:md:text-2xl focus:outline-none focus:ring focus:ring-offset-2 focus:ring-orange-300 active:bg-orange-600 transition rounded-lg inline-block bg-orange-600 px-4 py-2 text-white uppercase font-semibold text-sm lg:py-3"
+            href="#"
+            >Book your Escape</a
+          >
+        </div>
+      </div>
+      <div class="hidden relative lg:block">
+        <img
+          class="rounded-lg shadow-xl absolute inset-0 w-full h-full object-cover object-center"
+          src="/images/summer.jpg"
+          alt="Vaction on the beach "
+        />
       </div>
     </div>
   </body>
